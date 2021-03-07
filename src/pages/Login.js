@@ -63,6 +63,7 @@ const useStyles = makeStyles((theme) => ({
       paddingTop: 4,
       "&:hover": {
         textDecoration: "underline",
+        cursor: "pointer",
       },
     },
   },

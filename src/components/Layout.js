@@ -1,6 +1,6 @@
 import * as React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Paper } from "@material-ui/core";
+import { Paper, Typography } from "@material-ui/core";
 
 import Snack from "./Snack";
 
@@ -24,6 +24,13 @@ const useStyles = makeStyles((theme) => ({
       width: "100%",
       height: "100%",
     },
+    "& .logo": {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      width: "100%",
+      height: "100%",
+    },
   },
   square: {
     position: "absolute",
@@ -42,7 +49,9 @@ const Layout = ({ children }) => {
     <div className={classes.root}>
       <span className={classes.square} />
       <Paper className={classes.main} elevation={3}>
-        <div className="item">teste</div>
+        <div className="logo">
+          <Typography variant="h5">Some cool Logo</Typography>
+        </div>
         <div className="item">{children}</div>
       </Paper>
       <Snack />
