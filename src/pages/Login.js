@@ -66,6 +66,9 @@ const useStyles = makeStyles((theme) => ({
         cursor: "pointer",
       },
     },
+    [theme.breakpoints.down("sm")]: {
+      width: "95%",
+    },
   },
 }));
 

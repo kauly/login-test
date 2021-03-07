@@ -33,6 +33,9 @@ const useStyles = makeStyles((theme) => ({
     "& .btn": {
       marginTop: "20px",
     },
+    [theme.breakpoints.down("sm")]: {
+      width: "95%",
+    },
   },
 }));
 

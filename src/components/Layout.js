@@ -12,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     width: "100vw",
     height: "100vh",
+    [theme.breakpoints.down("sm")]: {
+      background: theme.palette.primary.main,
+    },
   },
   main: {
     background: "transparent",
@@ -31,6 +34,13 @@ const useStyles = makeStyles((theme) => ({
       width: "100%",
       height: "100%",
     },
+    [theme.breakpoints.down("sm")]: {
+      gridTemplateColumns: "auto",
+      background: "#fff",
+      "& .logo": {
+        display: "none",
+      },
+    },
   },
   square: {
     position: "absolute",
@@ -40,6 +50,9 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     background: theme.palette.primary.main,
     zIndex: 1,
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
+    },
   },
 }));
 
